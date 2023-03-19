@@ -24,7 +24,7 @@
 
     # Open the database using the "librarian" account
     try {
-      $db = new PDO("mysql:host=localhost;dbname=library", "librarian", "librarianpw");
+      $db = new PDO("mysql:host=localhost;dbname=library", "librarian", "root");
       $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
     catch (PDOException $e) {

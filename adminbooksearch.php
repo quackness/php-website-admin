@@ -27,7 +27,7 @@ $searchauthor = addslashes($searchauthor);
 
 # Open the database
 try {
-  $db = new PDO("mysql:host=localhost;dbname=library", "assistant", "assistantpw");
+  $db = new PDO("mysql:host=localhost;dbname=library", "assistant", "root");
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
